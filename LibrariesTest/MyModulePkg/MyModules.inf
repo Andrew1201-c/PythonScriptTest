@@ -1,0 +1,14 @@
+#
+#
+#  A component for configuration
+#
+#
+
+[Sources]
+# None
+
+[LibraryClasses]
+# None
+
+[ModuleClasses]
+ MyModules = MyModules.defs
