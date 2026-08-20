@@ -13,4 +13,4 @@
 ################################################################################
 
 [Defines]
- MODULE_INF_VERSION = 0x0001|UINT
+ MODULE_INF_VERSION = 0x0001|macro|UINT
