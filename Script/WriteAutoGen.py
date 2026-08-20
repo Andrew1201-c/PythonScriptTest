@@ -40,7 +40,6 @@ with open(output, "w", encoding="utf-8") as f:
 
     
     for key, value in config["Defines"].items():
-
         key = key.strip()
         parts = value.split("|")
         actual_value = parts[0].strip()
@@ -65,7 +64,6 @@ with open(output, "w", encoding="utf-8") as f:
 
         if expression:
             f.write(f"#define {key} ({actual_value})\n")
-
         else:
             f.write(f"#define {key} {actual_value}\n")
 
