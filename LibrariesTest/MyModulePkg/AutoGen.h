@@ -5,4 +5,4 @@
 
 #define MODULE_INF_VERSION 0x0001
 
-#endif /* AUTOGEN_H */
+#endif /* _AUTOGEN_H */
