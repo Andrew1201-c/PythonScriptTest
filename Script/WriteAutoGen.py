@@ -49,6 +49,6 @@ with open(output, "w", encoding="utf-8") as f:
         if kind == "macro":
             f.write(f"#define {key} {actual_value}\n")
 
-    f.write(f"\n#endif _/* AUTOGEN_H_{time} */\n")
+    f.write(f"\n#endif /* AUTOGEN_H_{time} */\n")
 
 print("Generated: " + output)
