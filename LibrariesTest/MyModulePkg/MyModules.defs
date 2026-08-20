@@ -1,0 +1,16 @@
+## @file
+#
+#  Module Example
+#
+#  Copyright (c) 2026 Andrew
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+##
+
+################################################################################
+#
+# Modules
+#
+################################################################################
+
+[Defines]
+ MODULE_INF_VERSION = 0x0001|UINT
