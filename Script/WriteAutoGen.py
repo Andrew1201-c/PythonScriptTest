@@ -1,4 +1,3 @@
-<<<<<<< HEAD:Script/WriteAutoGen.py
 ## @file
 #
 #  Write to the AutoGen.h
@@ -105,4 +104,3 @@ with open(output, "w", encoding="utf-8") as f:
     f.write("\n#endif _/* AUTOGEN_H_{time} */\n")
 
 print("Generated: " + output)
->>>>>>> bd317f9 (Updated WriteAutoGen.py added dates):Script/writeautogen.py
