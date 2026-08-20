@@ -38,17 +38,37 @@ with open(output, "w", encoding="utf-8") as f:
     f.write(f"#define _AUTOGEN_H_{time}\n\n")
     f.write(f"/* Auto Generated Header File, for C to include. */\n\n")
 
+    
     for key, value in config["Defines"].items():
 
         key = key.strip()
         parts = value.split("|")
-
         actual_value = parts[0].strip()
-        kind = parts[1].strip().lower() if len(parts) > 1 else None
 
-        if kind == "macro":
+        # Default values
+        kind = None
+        datatype = None
+        expression = False
+
+        for part in parts[1:]:
+            field = part.strip()
+
+            if field.lower() == "macro":
+                kind = "macro"
+
+            elif field.lower() == "expression":
+                expression = True
+
+            # Datatype
+            else:
+                datatype = field.upper()
+
+        if expression:
+            f.write(f"#define {key} ({actual_value})\n")
+
+        else:
             f.write(f"#define {key} {actual_value}\n")
 
-    f.write(f"\n#endif /* AUTOGEN_H_{time} */\n")
+    f.write(f"\n#endif /* _AUTOGEN_H_{time} */\n")
 
 print("Generated: " + output)
