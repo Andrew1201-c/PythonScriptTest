@@ -11,7 +11,7 @@ import sys
 import os
 
 if len(sys.argv) < 3:
-    print("Usage: def2h <filename> <output.h>")
+    print("Usage: writeautogen <filename> <output.h>")
     sys.exit(1)
 
 filename = sys.argv[1]
@@ -31,8 +31,9 @@ if "Defines" not in config:
 
 with open(output, "w", encoding="utf-8") as f:
 
-    f.write("#ifndef AUTOGEN_H\n")
-    f.write("#define AUTOGEN_H\n\n")
+    f.write("#ifndef _AUTOGEN_H\n")
+    f.write("#define _AUTOGEN_H\n\n")
+    f.write("/* Auto Generated Header File, for C to include. */\n\n")
 
     for key, value in config["Defines"].items():
 
@@ -45,6 +46,6 @@ with open(output, "w", encoding="utf-8") as f:
         if kind == "macro":
             f.write(f"#define {key} {actual_value}\n")
 
-    f.write("\n#endif /* AUTOGEN_H */\n")
+    f.write("\n#endif _/* AUTOGEN_H */\n")
 
 print("Generated: " + output)
