@@ -1,3 +1,3 @@
 Information -
 
-This is where i development the python parser and tools. Note: In development - Andrew
+This is where i development the python parser and tools. For my OS
