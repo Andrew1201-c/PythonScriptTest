@@ -1,4 +1,4 @@
 Information -
 
-This is where i development the python parser and tools. For my OS
+This is where i development the python parser and tools for my OS
 (AutoGen.h is on Development)
