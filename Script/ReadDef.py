@@ -33,7 +33,8 @@ datatype = [ "VOID", "PVOID",
             "INT", "UINT", "UINT64", 
             "UINT32", "UINT8", "PINT", 
             "PUINT", "PUINT64", 
-            "PUINT32", "PUINT8"
+            "PUINT32", "PUINT8",
+            "BOOLEAN"
 ]
 
 config = configparser.ConfigParser()
