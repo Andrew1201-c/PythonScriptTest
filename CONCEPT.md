@@ -1,4 +1,4 @@
-# The Basic Concepts I Made
+## The Basic Concepts I Made
 
 This is the first concept about my Kernel. (How Python communicates with Build.bat)
 ---
