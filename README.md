@@ -1,2 +1,3 @@
 # PythonScriptTest
-I created a new one for os, planning to make all the scripts Python scripts. (But not all of them.)
+I created a new one for my OS, planning to make all the scripts Python scripts. (But not all of them.)
+This is a replacement for the repository - link[PythonScriptTestLegacy](https://github.com/Andrew1201-c/PythonScriptTestLegacy.git (Legacy))
